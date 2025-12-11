@@ -93,11 +93,11 @@ public class PongGame extends JPanel implements MouseMotionListener {
         }
 
         if (slowDownZone.isTouching(ball)) {
-           ball.setChangeX(*0.5);
+           ball.setChangeX(0.5);
         }
 
         if (speedUpZone.isTouching(ball)) {
-           ball.setChangeX(*2);
+           ball.setChangeX(2);
         }
 
         aiPaddle.moveY(ball.getY());
